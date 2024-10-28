@@ -1,0 +1,19 @@
+{
+  "name": "fashionee",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.79.4",
+    "scss": "^0.2.4",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "-": "^0.0.1"
+  }
+}

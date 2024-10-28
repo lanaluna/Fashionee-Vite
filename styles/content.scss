@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------
+// Основная часть.
+// -----------------------------------------------------------------------
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "search"
+                         "filter"
+                         "goods"
+                         "reviewed"
+                         "banner";
+    padding-top: 60px;
+
+    @media (min-width: $media--tablet-start) {
+        grid-template-columns: 244px 1fr;
+        grid-template-rows: min-content min-content min-content 1fr;
+        grid-template-areas: "search goods"
+                             "filter goods"
+                             "reviewed goods"
+                             "banner goods";
+        gap: 0 50px;
+        padding: 120px var(--main-side-margin) 0;
+    }
+
+    @media (min-width: $media--desktop-start) {
+        padding: 120px var(--desktop-content-margin) 0;
+    }
+}
+
+
+
+.search {grid-area: search;}
+.filter-container {grid-area: filter;}
+.goods {grid-area: goods;}
+.reviewed {grid-area: reviewed;}
+.banner {grid-area: banner;}
+
+
+
+@import 'content/content-header.scss';
+@import 'content/search.scss';
+@import 'content/filter.scss';
+@import 'content/reviewed.scss';
+@import 'content/banner.scss';
+@import 'content/goods.scss';
+@import 'content/paginator.scss';
+@import 'content/subscribe.scss';
+@import 'content/range-slider.scss';
+@import 'content/select.scss'; 
+@import 'content/find-us.scss/';
