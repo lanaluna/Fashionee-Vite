@@ -1,5 +1,5 @@
-import { createHTMLElement } from "./createHTMLElement";
-import { createImg } from "./CreateImg";
+import { createHTMLElement } from "./createHTMLElement.js";
+import { createImg } from "./CreateImg.js";
 
 
 export function createProductCard(product) {
