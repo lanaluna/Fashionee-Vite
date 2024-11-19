@@ -4,6 +4,7 @@ import { createImg } from "./CreateImg.js";
 
 export function createProductCard(product) {
     const card = createHTMLElement('li', ['goods__card']);
+    card.dataset.id = product.id;
 
     const divImgWrapper = createHTMLElement('div', ['goods__img-wrapper']);
     card.append(divImgWrapper);
@@ -48,6 +49,5 @@ export function createProductCard(product) {
         spanOldPrice.innerText = product.oldPrice;
         divDescription.append(spanOldPrice);
     }
-
     return card;
   }

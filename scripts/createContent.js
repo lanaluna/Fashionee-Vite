@@ -1,12 +1,5 @@
 import {createProductList} from '../scripts/createProductList.js';
 
-
-//TODO: прочитать про фетч
-//прочитать про модули
-
-
-
-
 fetch('./products.json')
 .then(response => {
   if (!response.ok) {
@@ -15,7 +8,7 @@ fetch('./products.json')
   return response.json();
 })
 .then(jsonData => createProductList(jsonData))
-.catch(error => console.error('Ошибка при исполнении запроса: ', error));
+.catch(error => console.error('Не получилось вывести список товаров: ', error));
 
 
 
