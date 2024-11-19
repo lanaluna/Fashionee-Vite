@@ -1,6 +1,6 @@
-import { createHTMLElement } from "./createHTMLElement";
-import { createProductCard } from './createProductCard.js';
-import { goods, itemsPerPage, paginator, goodsObject } from './variables.js';
+import { createHTMLElement } from "/scripts/createHTMLElement";
+import { createProductCard } from '/scripts/createProductCard.js';
+import { goods, itemsPerPage, paginator, goodsObject } from '/scripts/variables.js';
 
 
 //функция непосредственно скрывает и показывает нужную страницу и дизейблит/делает активной цифровые кнопки пагинатора

@@ -1,4 +1,4 @@
-import {createProductList} from '../scripts/createProductList.js';
+import {createProductList} from '/scripts/createProductList.js';
 
 fetch('./products.json')
 .then(response => {

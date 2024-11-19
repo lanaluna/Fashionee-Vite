@@ -1,7 +1,7 @@
-import { createHTMLElement } from './createHTMLElement.js';
-import { createPaginator } from './createPaginator.js';
-import { createProductCard } from './createProductCard.js';
-import { goods, itemsPerPage, paginator, goodsObject } from './variables.js';
+import { createHTMLElement } from '/scripts/createHTMLElement.js';
+import { createPaginator } from '/scripts/createPaginator.js';
+import { createProductCard } from '/scripts/createProductCard.js';
+import { goods, itemsPerPage, paginator, goodsObject } from '/scripts/variables.js';
 
 export function createProductList(products) {
     //products это массив

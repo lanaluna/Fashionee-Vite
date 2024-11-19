@@ -1,6 +1,6 @@
-import { createHTMLElement } from "./createHTMLElement";
-import { showPageN } from "./showPageN";
-import { paginator } from "./variables";
+import { createHTMLElement } from "/scripts/createHTMLElement";
+import { showPageN } from "/scripts/showPageN";
+import { paginator } from "/scripts/variables";
 
 
 export function createPaginator(numberOfPage) {
